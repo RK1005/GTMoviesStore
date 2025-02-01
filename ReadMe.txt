@@ -4,3 +4,8 @@ Requirements:
 
 Tips:
 - textbook does not index properly so that may be cause of error as you do your work
+
+SuperUser:
+- user: sree1
+- email: 2340@gatech.edu
+- pass: sree12340
