@@ -8,14 +8,15 @@ def index(request):
         movies = Movie.objects.all()
     template_data = {}
     template_data['title'] = 'Movies'
-    template_data['movies'] = Movie.objects.all()
+    # template_data['movies'] = Movie.objects.all()
+    template_data['movies'] = movies
     return render(request, 'movies/index.html',
                   {'template_data': template_data})
 # Create your views here.
 def show(request, id):
     movie = Movie.objects.get(id=id)
     template_data = {}
-    template_data['title'] = movie['name']
+    template_data['title'] = movie.name
     template_data['movie'] = movie
     return render(request, 'movies/show.html',
                   {'template_data': template_data})
